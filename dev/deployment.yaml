@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: new-gokul
+  name: demo-app-deployment
 spec:
+  replicas: 2
   selector:
     matchLabels:
-      app: myapp
-  replicas: 3
+      app: demo-app
   template:
     metadata:
       labels:
-        app: myapp
+        app: demo-app
     spec:
       containers:
-      - name: myapp
-        image: nanajanashia/argocd-app:1.2
+      - name: demo-app
+        image: 1nfosecsingh/mywebapp:v1.2
         ports:
-        - containerPort: 8080
+        - containerPort: 80
