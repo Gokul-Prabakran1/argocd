@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: demo-app
-        image: gokul72/boardgame:v1.0
+        image: gokul72/private:latest
         ports:
         - containerPort: 8080
