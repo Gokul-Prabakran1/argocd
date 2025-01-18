@@ -1,0 +1,3 @@
+kustomize:
+  images:
+  - gokul72/boardgame:v1.1
