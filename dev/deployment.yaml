@@ -17,3 +17,5 @@ spec:
         image: gokul72/private:latest
         ports:
         - containerPort: 8080
+      imagePullSecrets:
+      - name: dockerhub-secret
