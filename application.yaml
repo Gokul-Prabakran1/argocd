@@ -10,6 +10,11 @@ spec:
     repoURL: https://github.com/Gokul-Prabakran1/argocd.git
     targetRevision: HEAD
     path: dev
+
+  source:
+    repoURL: https://github.com/Gokul-Prabakran1/argocd.git
+    targetRevision: HEAD
+    path: prod
   destination: 
     server: https://kubernetes.default.svc
     namespace: myapp
