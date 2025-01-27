@@ -17,5 +17,4 @@ spec:
         image: gokul72/boardgame:v1.3
         ports:
         - containerPort: 8080
-      imagePullSecrets:
-      - name: dockerhub1-secret 
+      
