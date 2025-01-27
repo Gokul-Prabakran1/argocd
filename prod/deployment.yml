@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: bankapp
+  name: nginx
 spec:
   replicas: 1
   selector:
@@ -13,7 +13,7 @@ spec:
         app: bankapp
     spec:
       containers:
-      - name: bankapp
+      - name: nginx
         image: nginx:latest
         ports:
-        - containerPort: 8080
+        - containerPort: 80
